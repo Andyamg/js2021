@@ -1,14 +1,16 @@
 // Código del cuadrado
-console.group ("Cuadrado"); //Va a agrupar todos los console log que sean parte del código antes del console.groupEnd para que al momento de verifificar en la consola, los mensajes estén ordenados.
+console.group ("Cuadrado"); //Va a agrupar todos los console log que sean parte del código antes del console.groupEnd.
 
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado miden: " + ladoCuadrado + " cm");
+// const ladoCuadrado = 5;
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log("El perimetro del cuadrado mide: " + perimetroCuadrado + " cm");
+function perimetroCuadrado(lado) {
+    return lado * 4; //Se cambió el nombre de la variable lado por el parámetro lado, ya que este es el que se invocará en un futuro.
+}
 
-const areaCuadrada = ladoCuadrado * ladoCuadrado;
-console.log ("El área del cuadrado es de: " + areaCuadrada + " cm²");
+function areaCuadrada(lado)//Parámetro
+{ return lado * lado;}  
+// areaCuadrada (15) //Argumento
+
 
 console.groupEnd();// Este sirve para finalizar la agrupación de console.group y que pueda ser abierta otra agrupación.
 
@@ -16,43 +18,39 @@ console.groupEnd();// Este sirve para finalizar la agrupación de console.group 
 
 console.group ("Triángulo");
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const ladoTriangulo3 = 4;
+// const ladoTriangulo1 = 6;
+//const ladoTriangulo2 = 6;
+//const ladoTriangulo3 = 4;
+//const alturaTriangulo = 5.5;
 
-console.log ("Los lados del triángulo miden: " 
-+ ladoTriangulo1 
-+ " cm, " 
-+ ladoTriangulo2 
-+ " cm, y " 
-+ ladoTriangulo3 
-+ " cm");
+function perimetroTriangulo(lado1, lado2, lado3) 
+{    return lado1 + lado2 + lado3; } 
 
-const alturaTriangulo = 5.5;
-console.log ("La alatura del triángulo mide: " + alturaTriangulo + " cm");
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + ladoTriangulo3;
-console.log ("El perímetro del triángulo es de: " + perimetroTriangulo + " cm");
+function areaTriangulo(base, altura) {
+    return (base * altura) / 2;
+} 
 
-const areaTriangulo = (ladoTriangulo3 * alturaTriangulo) / 2;
-console.log ("El área del triángulo es de: " + areaTriangulo + " cm²")
-
-console.groupEnd(); //Una manera de ordenar tus variables al concatenar es dando enter por cada string y otro por variable para hacerlo más legible si gustas (toma en cuenta el espacio de memoria). Esto se hace con console.group y console.groupEnd.
+console.groupEnd(); //Finalizacción de console.gorup para dar inicio a otro grupo.
 
 // Código de Círculo
 
 console.group ("Círculo");
 
-const radioCirculo = 4;
-const diametroCirculo = radioCirculo * 2;
-const pi = Math.PI;
 
-console.log("El radio del círculo es: " + radioCirculo + "cm, el diámetro es: " + diametroCirculo + " cm, y PI vale: " + pi);
 
-const perimetroCirculo = diametroCirculo * pi;
-console.log("El perímetro del círculo es de: " + perimetroCirculo + "cm.");
+function diametroCirculo(radio){
+    return radio * 2;
+}
 
-const areaCirculo = (radioCirculo * radioCirculo) * pi;
-console.log("El área del círculo vale: " + areaCirculo + " cm² :3")
+
+function perimetroCirculo(radio){
+    const diametro = diametroCirculo(radio); //Se puso una función dentro de otra función. Sólo con sólo dar el radio, va a poder calcular el diámetro y el perímetro.
+    return diametro * Math.PI
+} 
+
+function areaCirculo(radio) {
+    return (radio*radio) * Math.PI;
+} 
 
 console.groupEnd();
