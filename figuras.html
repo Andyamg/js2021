@@ -7,8 +7,27 @@
     <title>Figuras Geométricas | Curso Práctico de Java Script 2021</title>
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el priemer taller del curso práctico de JavaScript</p>
+    </header>
+   <section>
+    <h2>Calcula el área y perímetro de un cuadrado</h2>
+    <form action="">
+        <label for="InputCuadrado"> <!--El for sirve para que se conecte con otro elemento del formulario.-->
+            Escribe cuánto mida cada lado de tu cuadrado:
+        </label>
+        <input id="InputCuadrado"  type="number">
+        <button type="button" onclick="calcularPerimetroCuadrado()"> <!--Estas son para que una vez se haga click al botón, pueda hacer la función que está en js-->
+            Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+        </button>
+    </form>
+   </section>
     <script src="./figuras.js"></script>
     <!-- touch figuras.(html, js) // sirve para crear dos archivos con el mismo nombre pero con extensión diferente en la terminal-->
+
 </body>
 </html>

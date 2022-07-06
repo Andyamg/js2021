@@ -7,7 +7,7 @@ function perimetroCuadrado(lado) {
     return lado * 4; //Se cambió el nombre de la variable lado por el parámetro lado, ya que este es el que se invocará en un futuro.
 }
 
-function areaCuadrada(lado)//Parámetro
+function areaCuadrado(lado)//Parámetro
 { return lado * lado;}  
 // areaCuadrada (15) //Argumento
 
@@ -54,3 +54,19 @@ function areaCirculo(radio) {
 } 
 
 console.groupEnd();
+
+//Aquí interactuamos con el HTML
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");//variable que recibe lo que se escriba en el input desde el HTML hasta el JS.
+    const value = input.value; //Esta va a tomar el valor que tenga el input para poder usarlo.
+
+    const perimetro = perimetroCuadrado (value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area= areaCuadrado (value);
+    alert(area); //Lo mejor es no usar alerts, no suelen gustar mucho.
+}
