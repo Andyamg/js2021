@@ -70,3 +70,39 @@ function calcularAreaCuadrado(){
     const area= areaCuadrado (value);
     alert(area); //Lo mejor es no usar alerts, no suelen gustar mucho.
 }
+
+//HTML Triángulo
+function calcularPerimetroTriangulo(){
+    const inputtri1 = document.getElementById("InputTriangulo1");
+    const valuetri1 = Number(inputtri1.value);
+    const inputtri2 = document.getElementById("InputTriangulo2");
+    const valuetri2 = Number(inputtri2.value);
+    const inputtri3 = document.getElementById("InputTriangulo3");
+    const valuetri3 = Number(inputtri3.value);
+    const perimetrotri = perimetroTriangulo (valuetri1, valuetri2, valuetri3);
+    alert("El perímetro del triángulo es: " + perimetrotri);
+}
+
+function calcularAreaTriangulo(){
+    const inputtri3 = document.getElementById("InputTriangulo3");
+    const valuetri3 = Number(inputtri3.value);
+    const inputaltura = document.getElementById ("InputAltT");
+    const valuealt = Number(inputaltura.value);
+    const areatri = areaTriangulo (valuetri3, valuealt);
+    alert ("El área de este triángulo es de: " + areatri);
+}
+
+// HTML Círculo
+function calcCircunferencia(){
+    const inputcirc = document.getElementById("InputCirculo");
+    const valuecirculo = Number(inputcirc.value);
+    const circunferencia = perimetroCirculo(valuecirculo);
+    alert ("La circunferencia de este círculo es: " + circunferencia);
+}
+
+function calcAreaCirculo(){
+    const inputcirc = document.getElementById("InputCirculo");
+    const valuecirculo = Number(inputcirc.value);
+    const areaCirc = areaCirculo (valuecirculo);
+    alert ("El área de este cérculo es de: " + areaCirc);
+}

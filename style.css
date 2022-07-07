@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f6edd8;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header p{
+    font-size: 1.5rem;
+}
+.Cuadrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Cuadrado h2{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.Cuadrado form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 18px;
+}
+.Cuadrado form input{
+    margin: 12px 0 8px 0;
+}
+.Cuadrado form button{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+.Triangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Triangulo h2{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.Triangulo form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 18px;
+    margin: 8px 0 8px 0;
+}
+.Triangulo form input{
+    margin: 8px 0 8px 0;
+}
+.Triangulo form button{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+.Circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Circulo h2{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.Circulo form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 8px 0 8px 0;
+}
+.Circulo form input{
+    margin: 8px 0 8px 0;
+}
+.Circulo form button{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
