@@ -1,103 +1,195 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+:root{
+    --color1: #f6f6f6;
+    --color2: #7C99AC;
+    --color3: #92A9BD;
+    --color4: #D3DEDC;
+    --color5: #BBBBBB
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
 }
 
 body{
-    background-color: #f6edd8;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    font-family:'Gantari', sans-serif;
 }
 
 header{
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-header p{
-    font-size: 1.5rem;
-}
-.Cuadrado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Cuadrado h2{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-}
-
-.Cuadrado form{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    font-size: 18px;
-}
-.Cuadrado form input{
-    margin: 12px 0 8px 0;
-}
-.Cuadrado form button{
-    display: flex;
+    display: grid;
     justify-content: center;
+    justify-items: center;
+    font-size: var(--lg);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color2);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Cuadrado{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 22px;
+}
+.Cuadrado h2{
+    font-size: var(--md);
+}
+.Cuadrado form{
+    display: grid;
+    width: 300px;
     margin: 8px;
 }
-
-.Triangulo {
+.Cuadrado label{
+    color: var(--color3);
+    font-weight: bold;
+}
+.Cuadrado input{
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--color1);
+    font-weight: bold;
+}
+#PeriCuadradro{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+}
+#AreaCuadrado{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+}
+.Triangulo{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 22px 0;
 }
-
 .Triangulo h2{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    font-size: var(--md);
 }
-
 .Triangulo form{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    font-size: 18px;
-    margin: 8px 0 8px 0;
-}
-.Triangulo form input{
-    margin: 8px 0 8px 0;
-}
-.Triangulo form button{
-    display: flex;
     justify-content: center;
+    align-items: stretch;
+    width: 300px;
     margin: 8px;
 }
+.Triangulo label{
+    color: var(--color3);
+    font-weight: bold;
+}
+.Triangulo input{
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--color1);
+    font-weight: bold;
+}
+#PeriTriangulo{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+}
+#AreaTriangulo{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+}
 
-.Circulo {
+.Circulo{
+    margin: 0 0 22px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .Circulo h2{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    font-size: var(--md);
 }
-
 .Circulo form{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 8px 0 8px 0;
-}
-.Circulo form input{
-    margin: 8px 0 8px 0;
-}
-.Circulo form button{
-    display: flex;
     justify-content: center;
+    align-items: stretch;
+    width: 300px;
     margin: 8px;
+}
+.Circulo label{
+    color: var(--color3);
+    font-weight: bold;
+}
+.Circulo input{
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--color1);
+    font-weight: bold;
+}
+#Circunferencia{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+}
+#AreaCirculo{
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    background-color: var(--color4);
+    color: var(--color1);
+    margin: 8px;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
 }
