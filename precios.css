@@ -1,0 +1,88 @@
+:root{
+    --color1: #7c3e66;
+    --color2: #f2ebe9;
+    --color3: #a5becc;
+    --color4: #243a73;
+    --sm: 14px;
+    --md: 18px;
+    --lg: 22px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Tajawal, sans-serif;
+    display: grid;
+}
+header{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    font-size: var(--lg);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color4);
+    margin: 24px;
+}
+main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 100px;
+    margin: 24px;
+    height: 200px;
+    width: auto;
+    font-size: var(--md);
+}
+section{
+    display: grid;
+    justify-items: center;
+    background-color: var(--color3);
+    border-radius: 24px;
+}
+section h2{
+    font-weight: bold;
+    margin: 24px;
+}
+section form{
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+
+    width:500px;
+    height: 300px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin: 24px;
+}
+form label{
+    font-size: var(--md);
+}
+#InputPrice{
+    width: auto;
+    height: 30px;
+    border: none;
+    padding: 8px;
+    background-color: var(--color2);
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+#InputDiscount{
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--color2);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+button{
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color1);
+    color: var(--color2);
+}

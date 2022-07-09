@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gantari:wght@200&family=Maven+Pro&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./precios.css">
+    <title>Porcentajes y Descuentos | Curso pŕactico de JavaScript de Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el Precio a pagar de tus productos con descuentos.</h2>
+
+            <form action="">
+                <label for="InputPrice">Escribe el precio de tu producto: </label>
+                <input id="InputPrice" type="number" placeholder="$120"><br>
+
+                <label for="InputDiscount">Escribe el descuento de tu producto.</label>
+                <input id="InputDiscount" type="number" placeholder="15%"><br>
+
+                <button type="button" onclick="priceDiscount()"> Calcular precio con descuento</button>
+
+                <p id="ResultP"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="./precios.js"></script>
+</body>
+</html>

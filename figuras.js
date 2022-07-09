@@ -55,6 +55,17 @@ function areaCirculo(radio) {
 
 console.groupEnd();
 
+// Altura de Isócseles
+function Iso (lado1, lado2, base){
+    if (lado1 === lado2 && lado1 != base){
+        const altura = Math.sqrt((lado2*lado2)- ((base * base)/4))
+        return altura;
+    }
+    else{
+        alert("Hay un error en los datos, por favor verifícalos.")
+    }
+} 
+
 //Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");//variable que recibe lo que se escriba en el input desde el HTML hasta el JS.
@@ -90,6 +101,17 @@ function calcularAreaTriangulo(){
     const valuealt = Number(inputaltura.value);
     const areatri = areaTriangulo (valuetri3, valuealt);
     alert ("El área de este triángulo es de: " + areatri);
+}
+
+function alturaIsosceles(){
+    const inputtri1 = document.getElementById("InputTriangulo1");
+    const valuetri1 = Number(inputtri1.value);
+    const inputtri2 = document.getElementById("InputTriangulo2");
+    const valuetri2 = Number(inputtri2.value);
+    const inputtri3 = document.getElementById("InputTriangulo3");
+    const valuetri3 = Number(inputtri3.value);
+    const altiso = Iso (valuetri1, valuetri2, valuetri3);
+    alert ("La altura de este triángulo Isósceles es de: " + altiso);
 }
 
 // HTML Círculo
